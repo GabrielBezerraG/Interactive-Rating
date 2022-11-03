@@ -1,0 +1,41 @@
+.numbers {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 1.5rem;
+}
+
+.numbers__button {
+   border: none;
+   background-color: var(--dark-grey);
+   color: var(--light-grey);
+   font-size: 0.9rem;
+   font-family: inherit;
+   height: 42px;
+   width: 42px;
+   border-radius: 50%;
+   padding-top: 5px;
+   cursor: pointer;
+   transition: 300ms background;
+}
+
+.numbers__button--active {
+   background-color: var(--light-grey);
+   color: var(--white);
+}
+
+.numbers__button:hover {
+   background-color: var(--orange);
+   color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+   .numbers {
+      margin-bottom: 2.1rem;
+   }
+
+   .numbers__button {
+      width: 51px;
+      height: 51px;
+      font-size: 1.1rem;
+   }
+}

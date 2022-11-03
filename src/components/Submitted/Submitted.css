@@ -1,0 +1,63 @@
+.submitted {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.submitted__icon {
+   background: url(../../images/illustration-thank-you.svg) center / contain no-repeat;
+   display: inline-block;
+   width: 150px;
+   height: 100px;
+   margin-top: 0.6rem;
+   margin-bottom: 1.5rem;
+}
+
+.submitted__selected-number {
+   color: var(--faded-orange);
+   font-size: 0.95rem;
+   background-color: var(--dark-grey);
+   padding: 0.7rem 0.75rem 0.5rem;
+   border-radius: 15px;
+   margin-bottom: 2rem;
+}
+
+.submitted__title {
+   font-size: 1.5rem;
+   font-weight: 500;
+   margin-bottom: 1.25rem;
+}
+
+.submitted__text {
+   text-align: center;
+   font-size: 0.95rem;
+   color: var(--light-grey);
+   line-height: 1.4rem;
+   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+   .submitted__icon {
+      width: 162px;
+      height: 108px;
+      margin-top: 0.85rem;
+      margin-bottom: 2.15rem;
+   }
+
+   .submitted__selected-number {
+      font-size: 1rem;
+      margin-bottom: 2.5rem;
+      padding: 0.7rem 1.25rem 0.5rem;
+   }
+
+   .submitted__title {
+      font-size: 1.9rem;
+      margin-bottom: 0.9rem;
+   }
+
+   .submitted__text {
+      font-size: 1.02rem;
+      line-height: 1.6rem;
+      margin-bottom: 1.25rem;
+   }
+}

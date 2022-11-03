@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Rating from './components/Rating/Rating';
+import Submitted from "./components/Submitted/Submitted";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const numbers = [1, 2, 3, 4, 5];
+
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      rating: '',
+      submitted: false
+    }
+    this.chooseRatingNumber = this.chooseRatingNumber.bind(this);
+    this.submit = this.submit.bind(this);
+  }
+
+  chooseRatingNumber(event) {
+    this.setState({
+      rating: Number(event.target.dataset.number)
+    });
+  }
+
+  submit() {
+    if (this.state.rating !== '') {
+      this.setState({
+        submitted: true
+      })
+    }
+  }
+  
+  render() {
+    return (
+      <div className="background-container">
+        <main className="main-container">
+          {this.state.submitted 
+          ? <Submitted rating={this.state.rating} /> 
+          : <Rating numbers={numbers} 
+            rating={this.state.rating} 
+            chooseRatingNumber={this.chooseRatingNumber} 
+            submit={this.submit}/>}
+        </main>
+      </div>
+    )
+  }
 }
-
-export default App;
