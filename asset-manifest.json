@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "//gabrielbezerrag.github.io/Interactive-Rating/static/css/main.9a9bd93a.css",
-    "main.js": "//gabrielbezerrag.github.io/Interactive-Rating/static/js/main.13d90a72.js",
+    "main.js": "//gabrielbezerrag.github.io/Interactive-Rating/static/js/main.841ab0e3.js",
     "static/media/illustration-thank-you.svg": "//gabrielbezerrag.github.io/Interactive-Rating/static/media/illustration-thank-you.d74a66b551b99ae110b5.svg",
     "index.html": "//gabrielbezerrag.github.io/Interactive-Rating/index.html",
     "static/media/icon-star.svg": "//gabrielbezerrag.github.io/Interactive-Rating/static/media/icon-star.12766a8d207af861a70f.svg",
     "main.9a9bd93a.css.map": "//gabrielbezerrag.github.io/Interactive-Rating/static/css/main.9a9bd93a.css.map",
-    "main.13d90a72.js.map": "//gabrielbezerrag.github.io/Interactive-Rating/static/js/main.13d90a72.js.map"
+    "main.841ab0e3.js.map": "//gabrielbezerrag.github.io/Interactive-Rating/static/js/main.841ab0e3.js.map"
   },
   "entrypoints": [
     "static/css/main.9a9bd93a.css",
-    "static/js/main.13d90a72.js"
+    "static/js/main.841ab0e3.js"
   ]
 }
