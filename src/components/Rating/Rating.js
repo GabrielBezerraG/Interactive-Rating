@@ -4,7 +4,7 @@ import './numbers.css';
 export default function Rating(props) {
   return (
     <div className="rating">
-      <span aria-label='Star icon' className='rating__icon'>
+      <span className='rating__icon'>
         <i className="rating__star" />
       </span>
       <h1 className="rating__title">How did we do?</h1>
